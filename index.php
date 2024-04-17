@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ch = curl_init();
 
     // Paramètres de la requête curl pour l'initialisation du paiement
-     $publicKey ='pk.DW6ASrbfvkp9vy57Sh9QdEsZv5kungOF9LnN7k3qy9fs7lA3iAKTsvxX1DVPBsj5cs0wgqZTu1YMdw6VoncXjrUUO33zyyoDLx3RV1hRwysCVa2wMiYNn0ENTuURv';
+     $publicKey ='{CLE PUBLIC}' //AJOUTER VOTRE CLE PUBLIC ICI;
     $url = "https://api.notchpay.co/payments/initialize";
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POST, true);
